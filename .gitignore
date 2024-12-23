@@ -1,0 +1,19 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# PHP
+vendor/
+composer_vendor/
+composer.lock
+
+# General
+.DS_Store
+Thumbs.db
+.env
+.idea/
+.vscode/
+*.log
+*.cache
+*.tmp
