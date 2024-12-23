@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Websites</title>
+    <meta name="description" content="<?= $description ?>">
+    <title><?= $title ?></title>
     <link rel="stylesheet" href="<?= base_url('/css/styles.css') ?>">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </head>
