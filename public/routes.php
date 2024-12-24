@@ -25,6 +25,11 @@ $routes = [
         'file' => __DIR__ . '/../views/blog.php',
         'title' => 'Blog & Updates',
         'description' => 'Read our latest blog posts and updates'
+    ],
+    '/cart' => [
+        'file' => __DIR__ . '/../views/cart.php',
+        'title' => 'Cart',
+        'description' => 'View your cart'
     ]
 ];
 

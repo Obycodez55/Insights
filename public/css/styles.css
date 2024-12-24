@@ -617,12 +617,18 @@ nav > .image-container > a > img {
 
 .hero {
   display: flex;
-  height: 100vh;
+  height: 50%;
   align-items: center;
   justify-content: center;
+  background-image: url('/images/bg_2.jpeg');
   background-size: cover;
   background-position: center;
-  background-image: url('/images/bg_2.jpeg');
+}
+
+@media (min-width: 768px) {
+  .hero {
+    height: 100vh;
+  }
 }
 
 .hero::after {

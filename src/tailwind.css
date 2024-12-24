@@ -28,8 +28,7 @@ nav > .image-container > a > img {
 }
 
 .hero {
-    @apply h-screen bg-cover bg-center flex items-center justify-center;
-    background-image: url('/images/bg_2.jpeg');
+    @apply md:h-screen bg-[url('/images/bg_2.jpeg')] h-[50%] bg-cover bg-center flex items-center justify-center;
 }
 .hero::after{
     @apply absolute bg-black opacity-50 w-screen h-screen;
