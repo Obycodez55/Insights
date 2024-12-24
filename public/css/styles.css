@@ -592,7 +592,7 @@ nav > .nav {
 }
 
 nav > .nav > div > a {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   line-height: 1.75rem;
   font-weight: 700;
 }
@@ -604,7 +604,7 @@ nav > .nav > div > a:hover {
 }
 
 nav > .image-container {
-  flex-basis: 15%;
+  flex-basis: 10%;
 }
 
 nav > .image-container > a > img {

@@ -17,11 +17,11 @@ nav > .nav {
 }
 
 nav > .nav > div > a {
-    @apply text-xl font-bold hover:underline hover:text-blue-200;
+    @apply text-lg font-bold hover:underline hover:text-blue-200;
   }
 
 nav > .image-container{
-  @apply basis-[15%];
+  @apply basis-[10%];
 }
 nav > .image-container > a > img {
     @apply w-full;
