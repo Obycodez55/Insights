@@ -554,10 +554,6 @@ video {
   display: none;
 }
 
-.cursor-pointer {
-  cursor: pointer;
-}
-
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -566,4 +562,51 @@ video {
 .text-blue-700 {
   --tw-text-opacity: 1;
   color: rgb(29 78 216 / var(--tw-text-opacity, 1));
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
+  font-family: Nunito, sans-serif;
+}
+
+nav {
+  position: sticky;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+  background: linear-gradient(to right, #6b46c1 30%, #1e3a8a 70%);
+}
+
+nav > .nav {
+  display: flex;
+  flex: 1 1 0%;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+nav > .nav > div > a {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+}
+
+nav > .nav > div > a:hover {
+  --tw-text-opacity: 1;
+  color: rgb(191 219 254 / var(--tw-text-opacity, 1));
+  text-decoration-line: underline;
+}
+
+nav > .image-container {
+  flex-basis: 15%;
+}
+
+nav > .image-container > a > img {
+  width: 100%;
 }

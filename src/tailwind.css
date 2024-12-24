@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply font-nunito bg-gray-100 w-full h-full;
+}
+
+nav {
+@apply text-white flex items-center justify-between p-4 sticky;
+background: linear-gradient(to right, #6b46c1 30%, #1e3a8a 70%);
+
+}
+
+nav > .nav {
+  @apply flex gap-5 justify-center flex-1 items-center;
+}
+
+nav > .nav > div > a {
+    @apply text-xl font-bold hover:underline hover:text-blue-200;
+  }
+
+nav > .image-container{
+  @apply basis-[15%];
+}
+nav > .image-container > a > img {
+    @apply w-full;
+}

@@ -2,7 +2,11 @@
 module.exports = {
   content: ['./views/**/*.php', './public/**/*.php'],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        nunito: ['Nunito', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 };

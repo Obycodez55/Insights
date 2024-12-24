@@ -11,6 +11,21 @@ $routes = [
         'title' => 'Shop',
         'description' => 'Browse our products'
     ],
+    "/about" => [
+        'file' => __DIR__ . '/../views/about.php',
+        'title' => 'About Us',
+        'description' => 'Learn more about our company'
+    ],
+    "/contact" => [
+        'file' => __DIR__ . '/../views/contact.php',
+        'title' => 'Contact Us',
+        'description' => 'Get in touch with us'
+    ],
+    '/blog' => [
+        'file' => __DIR__ . '/../views/blog.php',
+        'title' => 'Blog & Updates',
+        'description' => 'Read our latest blog posts and updates'
+    ]
 ];
 
 // Match route
