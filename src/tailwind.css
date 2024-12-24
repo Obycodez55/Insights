@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply font-nunito bg-gray-100 w-full h-full;
+  @apply font-nunito w-full h-full overflow-x-hidden;
 }
 
 nav {
@@ -17,7 +17,7 @@ nav > .nav {
 }
 
 nav > .nav > div > a {
-    @apply text-lg font-bold hover:underline hover:text-blue-200;
+    @apply md:text-lg font-bold hover:underline hover:text-blue-200;
   }
 
 nav > .image-container{
@@ -25,4 +25,13 @@ nav > .image-container{
 }
 nav > .image-container > a > img {
     @apply w-full;
+}
+
+.hero {
+    @apply h-screen bg-cover bg-center flex items-center justify-center;
+    background-image: url('/images/bg_2.jpeg');
+}
+.hero::after{
+    @apply absolute bg-black opacity-50 w-screen h-screen;
+    content: "";
 }
