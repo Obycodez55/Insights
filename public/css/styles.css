@@ -554,6 +554,46 @@ video {
   display: none;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.bottom-1 {
+  bottom: 0.25rem;
+}
+
+.right-4 {
+  right: 1rem;
+}
+
+.bottom-2 {
+  bottom: 0.5rem;
+}
+
+.bottom-4 {
+  bottom: 1rem;
+}
+
+.bottom-8 {
+  bottom: 2rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -564,11 +604,38 @@ video {
   color: rgb(29 78 216 / var(--tw-text-opacity, 1));
 }
 
+.text-green-400 {
+  --tw-text-opacity: 1;
+  color: rgb(74 222 128 / var(--tw-text-opacity, 1));
+}
+
 body {
   height: 100%;
   width: 100%;
   overflow-x: hidden;
   font-family: Nunito, sans-serif;
+}
+
+footer{
+  background: linear-gradient(to right, #6b46c1 30%, #1e3a8a 70%);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  text-align: center;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+footer > div.socials {
+  justify-content: center;
+  gap: 1.25rem;
+  padding: 1rem;
+}
+
+.copy {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 nav {
@@ -591,6 +658,8 @@ nav > .nav {
 }
 
 nav > .nav > div > a {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   font-weight: 700;
 }
 
@@ -598,6 +667,13 @@ nav > .nav > div > a:hover {
   --tw-text-opacity: 1;
   color: rgb(191 219 254 / var(--tw-text-opacity, 1));
   text-decoration-line: underline;
+}
+
+@media (min-width: 640px) {
+  nav > .nav > div > a {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -617,18 +693,13 @@ nav > .image-container > a > img {
 
 .hero {
   display: flex;
-  height: 50%;
+  height: 100vh;
+  width: 100%;
   align-items: center;
   justify-content: center;
   background-image: url('/images/bg_2.jpeg');
   background-size: cover;
   background-position: center;
-}
-
-@media (min-width: 768px) {
-  .hero {
-    height: 100vh;
-  }
 }
 
 .hero::after {
@@ -639,4 +710,4 @@ nav > .image-container > a > img {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
   opacity: 0.5;
   content: "";
-}
+} 

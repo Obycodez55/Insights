@@ -14,11 +14,11 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <nav>
             <div class="image-container">
                 <a href="<?= base_url('/') ?>">
-                    <img src="<?= base_url('/images/banner.jpeg') ?>" alt="Logo" width="100">
+                    <img src="<?= base_url('/images/banner_1.png') ?>" alt="Logo" width="100">
                 </a>
             </div>
             <div class="nav">
@@ -33,4 +33,4 @@
             </div>
         </nav>
     </header>
-    <main class="p-6">
+    <main>

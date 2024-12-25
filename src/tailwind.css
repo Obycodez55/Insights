@@ -5,7 +5,16 @@
 body {
   @apply font-nunito w-full h-full overflow-x-hidden;
 }
-
+footer{
+  background: linear-gradient(to right, #6b46c1 30%, #1e3a8a 70%);
+  @apply text-white text-center p-4 flex flex-col relative;
+}
+footer > div.socials{
+  @apply justify-center gap-5 p-4;
+}
+.copy{
+  @apply text-sm;
+}
 nav {
 @apply text-white flex items-center justify-between p-4 sticky;
 background: linear-gradient(to right, #6b46c1 30%, #1e3a8a 70%);
@@ -17,7 +26,7 @@ nav > .nav {
 }
 
 nav > .nav > div > a {
-    @apply md:text-lg font-bold hover:underline hover:text-blue-200;
+    @apply md:text-lg sm:text-base text-sm font-bold hover:underline hover:text-blue-200;
   }
 
 nav > .image-container{
@@ -28,9 +37,9 @@ nav > .image-container > a > img {
 }
 
 .hero {
-    @apply md:h-screen bg-[url('/images/bg_2.jpeg')] h-[50%] bg-cover bg-center flex items-center justify-center;
+    @apply w-full h-screen bg-[url('/images/bg_2.jpeg')] bg-cover bg-center flex items-center justify-center;
 }
 .hero::after{
     @apply absolute bg-black opacity-50 w-screen h-screen;
     content: "";
-}
+} 
