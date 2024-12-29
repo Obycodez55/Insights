@@ -799,7 +799,7 @@ nav > .image-container > a > img {
 
 .hero {
   display: flex;
-  height: 100vh;
+  height: 50vh;
   width: 100%;
   flex-direction: column;
   align-items: center;
@@ -812,17 +812,44 @@ nav > .image-container > a > img {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
+@media (min-width: 768px) {
+  .hero {
+    height: 70vh;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    height: 100vh;
+  }
+}
+
 .hero > * {
   z-index: 10;
 }
 
 .hero::after {
   position: absolute;
-  height: 100vh;
+  height: 50vh;
   width: 100vw;
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
   opacity: 0.5;
+}
+
+@media (min-width: 768px) {
+  .hero::after {
+    height: 70vh;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero::after {
+    height: 100vh;
+  }
+}
+
+.hero::after {
   content: "";
 }
 
@@ -879,8 +906,18 @@ nav > .image-container > a > img {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .about-section > .img > img {
   width: 100%;
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+}
+
+.about-section > .img > img:hover {
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }

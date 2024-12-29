@@ -66,13 +66,13 @@ nav > .image-container > a > img {
 }
 
 .hero {
-  @apply w-full h-screen overflow-hidden bg-[url('/images/bg_2.jpeg')] bg-cover bg-center text-white flex flex-col items-center justify-center;
+  @apply w-full h-[50vh] md:h-[70vh] lg:h-screen overflow-hidden bg-[url('/images/bg_2.jpeg')] bg-cover bg-center text-white flex flex-col items-center justify-center;
 }
 .hero > * {
   @apply z-10;
 }
 .hero::after {
-  @apply absolute bg-black opacity-50 w-screen h-screen;
+  @apply absolute bg-black opacity-50 w-screen h-[50vh] md:h-[70vh] lg:h-screen;
   content: "";
 }
 
@@ -97,9 +97,9 @@ nav > .image-container > a > img {
 }
 
 .about-section > .img {
-  @apply flex justify-center items-center;
+  @apply flex justify-center items-center overflow-hidden;
 }
 
 .about-section > .img > img {
-  @apply w-full;
+  @apply w-full hover:scale-110 transition-transform duration-200;
 }

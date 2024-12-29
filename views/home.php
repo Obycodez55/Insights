@@ -24,7 +24,7 @@
                         Things took an unexpected turn during my senior secondary school when I chose to study science. It surprised not just my peers but even me. However, I soon realized that science was a better fit for my abilities and interests. Over time, this realization led me to pursue a degree in Computer Science, where I found a natural affinity for problem-solving and technology.</p>
                 </div>
                 <div class="img">
-                    <img src="<?= base_url('/images/early_1.jpg') ?>" alt="Profile Picture">
+                    <img src="<?= base_url('/images/scene_1.jpg') ?>" alt="Profile Picture">
                 </div>
             </div>
             <div class="about-section">
