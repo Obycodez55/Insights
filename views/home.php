@@ -19,15 +19,15 @@
                     <h3>Early Life and Interests</h3>
                     <p>I was born in Ibadan, Oyo State, but my roots trace back to Ogun State. Growing up, I never imagined a future in technology. My aspirations leaned toward the arts—becoming a lawyer, an actor, a musician, or even a public speaker. Those were the paths that felt natural to me. <br />
 
-                        Things took an unexpected turn during my senior secondary school when I chose to study science. It surprised not just my peers but even me. However, I soon realized that science was a better fit for my abilities and interests. Over time, this realization led me to pursue a degree in Computer Science, where I found a natural affinity for problem-solving and technology.</p>
+                    Things took an unexpected turn during my senior secondary school when I chose to study science. It surprised not just my peers but even me. However, I soon realized that science was a better fit for my abilities and interests. Over time, this realization led me to pursue a degree in Computer Science, where I found a natural affinity for problem-solving and technology.</p>
                 </div>
                 <div class="img">
-                    <img src="https://via.placeholder.com/150" alt="Profile Picture">
+                    <img src="<?= base_url('/images/banner_1.png') ?>" alt="Profile Picture">
                 </div>
             </div>
             <div class="about-section">
                 <div class="img">
-                    <img src="https://via.placeholder.com/150" alt="Profile Picture">
+                    <img src="<?= base_url('/images/banner_1.png') ?>" alt="Profile Picture">
                 </div>
 
                 <div class="info">
@@ -49,12 +49,12 @@
                     To enhance my knowledge and stand out as a software engineer, I&apos;ve taken courses on data structures and algorithms, software architecture, and systems design, equipping me to build scalable and efficient applications.</p>
                 </div>
                 <div class="img">
-                    <img src="https://via.placeholder.com/150" alt="Profile Picture">
+                    <img src="<?= base_url('/images/banner_1.png') ?>" alt="Profile Picture">
                 </div>
             </div>
             <div class="about-section">
                 <div class="img">
-                    <img src="https://via.placeholder.com/150" alt="Profile Picture">
+                    <img src="<?= base_url('/images/banner_1.png') ?>" alt="Profile Picture">
                 </div>
                 <div class="info">
                     <span class="icon">
