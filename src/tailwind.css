@@ -3,22 +3,21 @@
 @tailwind utilities;
 
 body {
-  @apply font-nunito w-full h-full overflow-x-hidden;
+  @apply font-nunito w-full h-full overflow-x-hidden bg-gray-200;
 }
-footer{
+footer {
   background: linear-gradient(to right, #6b46c1 30%, #1e3a8a 70%);
   @apply text-white text-center p-4 flex flex-col relative;
 }
-footer > div.socials{
+footer > div.socials {
   @apply justify-center gap-5 p-4;
 }
-.copy{
+.copy {
   @apply text-sm;
 }
 nav {
-@apply text-white flex items-center justify-between p-4 sticky;
-background: linear-gradient(to right, #6b46c1 30%, #1e3a8a 70%);
-
+  @apply text-white flex items-center justify-between p-4 sticky;
+  background: linear-gradient(to right, #6b46c1 30%, #1e3a8a 70%);
 }
 
 nav > .nav {
@@ -26,53 +25,81 @@ nav > .nav {
 }
 
 nav > .nav > div > a {
-    @apply md:text-lg sm:text-base text-sm font-bold hover:underline hover:text-blue-200;
-  }
+  @apply md:text-lg sm:text-base text-sm font-bold hover:underline hover:text-blue-200;
+}
 
-nav > .image-container{
+nav > .image-container {
   @apply basis-[10%];
 }
 nav > .image-container > a > img {
-    @apply w-full;
+  @apply w-full;
 }
 
-.section{
+.section {
   @apply p-10;
 }
 
-.heading{
+.heading {
   @apply text-5xl font-bold text-center bg-purple-teal-blue bg-clip-text text-transparent;
 }
 
-.description{
+.description {
   @apply text-center text-xl font-semibold p-4 text-gray-800;
 }
-.process{
+.process {
   @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5;
 }
-.card{
+.card {
   @apply text-gray-300 p-4 rounded-lg shadow-lg bg-purple-blue;
 }
-.card > div{
+.card > div {
   @apply py-4 flex justify-between items-center;
 }
-.card > div > h3{
+.card > div > h3 {
   @apply text-2xl font-bold;
 }
-.card > div > span{
+.card > div > span {
   @apply text-xl;
 }
-.card > p{
+.card > p {
   @apply font-semibold;
 }
 
 .hero {
-    @apply w-full h-screen overflow-hidden bg-[url('/images/bg_2.jpeg')] bg-cover bg-center text-white flex flex-col items-center justify-center;
+  @apply w-full h-screen overflow-hidden bg-[url('/images/bg_2.jpeg')] bg-cover bg-center text-white flex flex-col items-center justify-center;
 }
-.hero > *{
+.hero > * {
   @apply z-10;
 }
-.hero::after{
-    @apply absolute bg-black opacity-50 w-screen h-screen;
-    content: "";
-} 
+.hero::after {
+  @apply absolute bg-black opacity-50 w-screen h-screen;
+  content: "";
+}
+
+.about-section {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-5 mb-4 shadow-lg bg-gray-100 rounded-md overflow-hidden;
+}
+
+.about-section > .info {
+  @apply flex flex-col p-10;
+}
+
+.about-section > .info > div {
+  @apply py-4 flex justify-self-end gap-4 items-center;
+}
+
+.about-section > .info > div > h3 {
+  @apply text-2xl font-bold;
+}
+
+.about-section > .info > p > span {
+  @apply font-bold bg-purple-blue bg-clip-text text-transparent;
+}
+
+.about-section > .img {
+  @apply flex justify-center items-center;
+}
+
+.about-section > .img > img {
+  @apply w-full;
+}
