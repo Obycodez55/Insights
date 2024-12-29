@@ -36,8 +36,41 @@ nav > .image-container > a > img {
     @apply w-full;
 }
 
+.section{
+  @apply p-10;
+}
+
+.heading{
+  @apply text-5xl font-bold text-center bg-purple-teal-blue bg-clip-text text-transparent;
+}
+
+.description{
+  @apply text-center text-xl font-semibold p-4 text-gray-800;
+}
+.process{
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5;
+}
+.card{
+  @apply text-gray-300 p-4 rounded-lg shadow-lg bg-purple-blue;
+}
+.card > div{
+  @apply py-4 flex justify-between items-center;
+}
+.card > div > h3{
+  @apply text-2xl font-bold;
+}
+.card > div > span{
+  @apply text-xl;
+}
+.card > p{
+  @apply font-semibold;
+}
+
 .hero {
-    @apply w-full h-screen bg-[url('/images/bg_2.jpeg')] bg-cover bg-center flex items-center justify-center;
+    @apply w-full h-screen overflow-hidden bg-[url('/images/bg_2.jpeg')] bg-cover bg-center text-white flex flex-col items-center justify-center;
+}
+.hero > *{
+  @apply z-10;
 }
 .hero::after{
     @apply absolute bg-black opacity-50 w-screen h-screen;
